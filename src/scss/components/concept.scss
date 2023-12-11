@@ -1,0 +1,60 @@
+.concept {
+  position: relative;
+  padding-bottom: 100px;
+  @media(max-width: 1400px){
+    padding-bottom: 60px;
+  }
+  @media(max-width: 991px){
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+ 
+  &Title {
+    font-size: 128px;
+    line-height: 100px;
+    font-family: $font-family-grotesk;
+    width: fit-content;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 75px;
+    @media(max-width: 1400px){
+      font-size: 95px;
+      line-height: 75px;
+      margin-bottom: 23px;
+    }
+    @media(max-width: 1199px){
+      font-size: 71px;
+      line-height: 60px;
+    }
+    @media(max-width: 767px){
+      font-size: 45px;
+      line-height: 41px;
+      margin-bottom: 20px;
+    }    
+  }
+  &W {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &Img {      
+    height: 580px;
+    object-fit: cover;
+    @media(max-width: 1400px){
+      height: 450px;
+    }
+    @media(max-width: 1199px){
+      height: 400px;
+    }
+    @media(max-width: 991px){
+      height: 54vw;
+    }
+  }
+  .contentText {
+    padding-right: 70px;
+    @media(max-width: 1400px){
+      padding-right: 25px;
+    }
+  }
+}

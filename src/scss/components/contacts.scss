@@ -1,0 +1,138 @@
+.contacts {
+  overflow: hidden;
+  padding-top: 100px;
+  @media(max-width: 1400px) {
+    padding-top: 60px;    
+  }
+
+  @media(max-width: 991px) {
+    padding-top: 45px;  
+  }
+  .h2Title {
+   margin-bottom: 100px; 
+   @media(max-width: 1400px){
+    margin-bottom: 45px;
+   }
+   @media(max-width: 767px){
+    margin-bottom: 20px;
+   }
+  }
+  iframe {
+    width: 100%;
+    height: 650px;
+    @media(max-width: 1400px){
+      height: 520px;
+    }
+    @media(max-width: 991px){
+      height: 300px;
+    }
+  }
+  .map {
+    width: 100%;
+    height: 650px;
+   
+    @media(max-width: 1400px){
+      height: 520px;
+    }
+    @media(max-width: 991px){
+      height: 300px;
+    }
+  }
+  &Map {
+    @media(max-width: 991px){
+      order: 2;
+      position: relative;
+    }
+  }
+
+  &W {
+    position: relative;
+    @media(max-width: 991px){
+      flex-direction: column;
+      display: flex;
+    }
+  }
+
+  &Window {
+    border-right: 7px solid #E2360E;
+    border-left: 7px solid #E2360E;
+    background: #121212;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media(max-width: 1400px){
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    @media(max-width: 575px){
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &Address {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    @media(max-width: 1400px){
+      margin-bottom: 20px;
+    }
+  }
+
+  &Phone {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    @media(max-width: 1400px){
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    @media(max-width: 575px){
+      font-size: 21px;
+    }
+  }
+
+  &Days {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    @media(max-width: 1400px){
+      margin-bottom: 20px;
+    }
+    span {
+      margin-bottom: 2px;
+    }
+  }
+
+  &Times {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    @media(max-width: 1400px){
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    &--sm {
+      font-size: 16px;
+    }
+  }
+}
+
+.contactsColContent {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  @media(max-width: 991px){
+   position: unset;   
+   transform: none;
+  }
+}

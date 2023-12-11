@@ -1,0 +1,186 @@
+.afisha {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+
+  @media(max-width: 1400px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media(max-width: 991px) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  &Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .h2Title {
+    line-height: 68px;
+
+    @media(max-width: 767px) {
+      line-height: 41px;
+    }
+  }
+
+  &Logo {
+    height: fit-content;
+  }
+
+  &Content {
+    background: #121212;
+    border-top: 25px solid #E2360E;
+    padding-bottom: 100px;
+    padding-top: 130px;
+
+    @media(max-width: 1400px) {
+      padding-bottom: 45px;
+      padding-top: 45px;
+      border-top: 20px solid #E2360E;
+    }
+
+    @media(max-width: 991px) {
+      padding-bottom: 45px;
+      padding-top: 45px;
+    }
+  }
+
+  &Slider {
+    @media(max-width: 991px) {
+      margin-bottom: 19px;
+    }
+
+    @media(max-width: 575px) {
+      padding-right: 80px;
+      overflow: visible;
+    }
+  }
+
+  &Slide {
+    &Img {
+      height: 345px;
+      width: 100%;
+      object-fit: cover;
+
+      @media(max-width: 1400px) {
+        height: 314px;
+      }
+
+      @media(max-width: 1199px) {
+        height: 240px;
+      }
+
+      @media(max-width: 991px) {
+        height: 218px;
+      }
+
+      @media(max-width: 767px) {
+        height: 250px;
+      }
+
+      @media(max-width: 575px) {
+        height: 71vw;
+      }
+      &W {
+        position: relative;
+        cursor: pointer;
+        &:hover {
+          .afishaSlidePlay {
+            opacity: 1;
+          }
+        }
+        iframe {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+    &Play {
+      opacity: .5;
+      transition: opacity .2s linear;
+      @media(max-width: 767px){
+        width: 75px;
+      }
+    }
+
+    &Date {
+      font-size: 64px;
+      font-family: $font-family-grotesk;
+      line-height: 100px;
+      margin-bottom: 50px;
+      @media(max-width: 1400px){
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 25px;
+      }
+      @media(max-width: 767px){
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 20px;
+      }
+    }
+    &Play {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &Items {
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media(max-width: 1400px){
+      height: 314px;
+    }
+    @media(max-width: 1199px){
+      height: 240px;
+    }
+    @media(max-width: 991px){
+      height: fit-content;
+      flex-direction: row;
+      justify-content: flex-start;
+      column-gap: 40px;
+      row-gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &Item {
+    max-width: 125px;
+
+    &:nth-child(2) {
+      margin-left: auto;
+      @media(max-width: 991px){
+        margin-left: unset;
+      }
+    }
+
+    &Img {
+      width: 114px;
+      height: 114px;
+      object-fit: cover;
+      margin-bottom: 25px;
+      @media(max-width: 1400px){
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+      @media(max-width: 1199px){
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

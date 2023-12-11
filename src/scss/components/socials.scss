@@ -1,0 +1,42 @@
+.socials {
+  ul {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+
+    li {
+      a {
+        svg {
+          fill: #fff;
+          opacity: .25;
+          transition: opacity .2s linear;
+          width: 20px;
+          height: 20px;
+          @media(max-width: 767px){
+            opacity: .7;
+          }
+        }
+
+        &:hover {
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  .socials {
+    ul {
+      li {
+        a {
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

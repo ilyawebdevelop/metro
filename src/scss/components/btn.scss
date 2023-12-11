@@ -1,0 +1,41 @@
+// btn
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 69px;
+  border-radius: 73px;
+  background-color: #E2360E;  
+  font-size: 18px;
+  color: #fff;
+  padding-left: 55px;
+  padding-right: 55px;
+  width: fit-content;
+  @media(max-width: 1400px){
+    height: 60px;
+  }
+  @media(max-width: 767px){
+    font-size: 15px;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.introBtn {
+  margin-top: 35px; 
+  @media(max-width: 1199px){
+    min-width: 300px;
+  }
+  @media(max-width: 767px){
+    margin-top: 25px;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media(max-width: 400px){
+    min-width: unset;
+  }
+}

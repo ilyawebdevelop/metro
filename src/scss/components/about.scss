@@ -1,0 +1,138 @@
+.about {
+  padding-top: 120px;
+  @media(max-width: 1400px){
+    padding-top: 60px;
+  }
+  @media(max-width: 767px){
+    padding-top: 30px;
+  }
+
+  &Image {
+    height: 579px;
+    width: 100%;
+    object-fit: cover;
+    @media(max-width: 1400px){
+      height: 460px;
+    }
+    @media(max-width: 1199px){
+      height: 400px;
+    }
+    @media(max-width: 991px){
+      height: 54vw;
+    }
+
+    &W {
+      position: relative;
+    }
+  }
+
+  &Icon {
+    width: fit-content;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    @media(max-width: 1400px){
+      left: -60px;
+    }
+    @media(max-width: 991px){
+      left: -5vw;
+    }
+    img {
+      @media(max-width: 1400px){
+        width: 120px;
+      }
+      @media(max-width: 991px){
+        width: 10vw;
+      }
+    }
+  }
+
+  &Content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 65px;
+    position: relative;
+
+    @media(max-width: 1400px) {
+      padding-left: 25px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @media(max-width: 1199px){
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media(max-width: 991px){
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &W {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+  }
+
+  &Title {
+    display: flex;
+    column-gap: 43px;
+    align-items: center;
+    position: relative;
+    right: 396px;
+    width: 665px;
+    top: -28px;
+
+    @media(max-width: 1400px) {     
+      right: 297px;
+      top: 0;
+    }
+    @media(max-width: 991px){
+      right: 0;
+      margin-bottom: 30px;
+      column-gap: 20px;
+    }
+    @media(max-width: 767px){
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+      row-gap: 10px;
+      margin-bottom: 20px;
+    }
+    &Logo {
+      @media(max-width: 1400px){
+        width: 100px;
+      }     
+      @media(max-width: 767px){
+        width: 8vw;
+      }
+      @media(max-width: 575px){
+        width: 50px;
+      }
+    }
+
+    &Text {
+      display: flex;
+      align-items: center;
+
+      img {
+        &:nth-child(1){
+          @media(max-width: 767px){
+            width: 66px;
+          }
+        }
+        &:nth-child(2) {
+          position: relative;
+          top: 3px;
+          left: 2px;
+          @media(max-width: 767px){
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
+}
